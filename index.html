@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetor</title>
 </head>
+
 <body>
 
     <div id="resultado"> Imprimir Vetor </div>
@@ -13,7 +15,20 @@
     <button onclick="imprimirVetor()"> Imprimir Vetor </button>
     <button onclick="imprimirVetor2()"> Imprimir Vetor 2</button>
 
+    <br><br><br>
+    <hr><br>
+
+    <form action="">
+        <input type="text" id="inputNome" placeholder="Insira seu nome"> <br>
+        <input type="email" name="email" id="inputEmail" placeholder="Insira seu email"><br>
+          <button id="botãoCadastro" onclick="vetorCadastro()" type="button">Cadastrar</button>
+          <button id="botaoConsulta" onclick="vetorConsulta()">Consultar</button>
+    </form>
+
+      <div id="output"></div> 
+
 
     <script src="vetor.js"></script>
 </body>
+
 </html>

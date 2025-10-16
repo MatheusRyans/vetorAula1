@@ -1,3 +1,6 @@
+
+
+
 function imprimirVetor() {
 
     let vetor = [];
@@ -27,3 +30,41 @@ function imprimirVetor2() {
     }
 
 }
+
+function vetorCadastro() {
+
+    let vNome = [];
+    let vEmail = [];
+
+
+    let nome = document.getElementById("inputNome").value;
+    let email = document.getElementById("inputEmail").value;
+
+
+    if (nome == "" || email == "") {
+        alert("Preencha os campos corretamente");
+    }
+    else {
+        vNome.push(nome);
+        vEmail.push(email);
+         alert("Cadastrado com sucesso");
+        document.getElementById("output").innerText = vNome + " - " + vEmail
+
+       
+    }
+
+
+
+}
+
+// function vetorConsulta(event) {
+//     event.preventDefault();
+//     let vetorConsulta = vetorCadastro;
+
+//     for (let index = 0; index < vetorConsulta.length; index++) {
+//         document.getElementById("output").innerHTML += vetorConsulta[index].nome + " - " + vetorConsulta[index].email + '<br>';
+//     }
+
+
+// }
+
